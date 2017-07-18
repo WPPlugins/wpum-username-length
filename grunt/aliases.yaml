@@ -1,0 +1,16 @@
+# Grunt aliases for our project.
+---
+'bump_version':
+- 'replace'
+# Update textdomain and makepot task(s)
+'i18n':
+- 'addtextdomain'
+- 'makepot'
+# Build everything
+build:
+- 'clean'
+- 'copy'
+- 'compress'
+# Default task
+default:
+- 'makepot'
